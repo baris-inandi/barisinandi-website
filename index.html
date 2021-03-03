@@ -5,25 +5,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/9da952c940.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
     <title>Barış İnandıoğlu</title>
 </head>
 
 <body>
     <div class="main">
-        <ul class="shapes">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
         <div class="card">
             <div class="content">
+                <div class="theme-switch-container">
+                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch"></a>
+                </div>
                 <header class="header">
                     <div class="pp">
                         <img src="pp.png" alt="profile-pic" class="image">
@@ -35,9 +27,8 @@
                     </p>
                 </header>
                 <div class="about">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum augue ex, id lacinia arcu
-                        maximus in. Nulla fermentum dui dignissim nibh luctus, at consectetur massa accumsan. Donec ut
-                        imperdiet orci. Praesent placerat ullamcorper nisl. </p>
+                    <p> This is some dummy text. Here is a link: <a class="link">Hello!</a> this link is also <a class="link">cool:</a> <a
+                            class="link">Cool Link</a> This text will be replaced with a more <a class="link">meaningful</a> one soon. <a class="link">This</a> is the last sentence. </p>
                 </div>
                 <div class="social">
                     <div class="links">
@@ -71,10 +62,9 @@
         </div>
 
         <footer>
-            <p class="footer-text">Made with &#10084; by <a target="_blank" rel="noopener noreferrer"
-                    href="https://github.com/baris-inandi" class="link">@baris-inandi</a></p>
+            <p class="footer-content" class="footer-text-only">Made with &#10084; by baris-inandi</p>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/baris-inandi/barisinandi-website"
-                class="link">View GitHub Repo</a>
+                class="footer-link">View GitHub Repo</a>
         </footer>
     </div>
 
