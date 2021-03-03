@@ -50,7 +50,6 @@ body {
     font-family: Arial;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -98,6 +97,9 @@ a {
 }
 
 * {
+    -webkit-transition: .33s ease;
+    -o-transition: .33s ease;
+    -moz-transition: .33s ease;
     transition: .33s ease;
 }
 
@@ -198,17 +200,26 @@ header {
 .icon:hover:before,
 .large-icon:hover:before {
     opacity: .65;
+    -webkit-transition: .25s ease;
+    -o-transition: .25s ease;
+    -moz-transition: .25s ease;
     transition: .25s ease;
 }
 
 
 .icon:active:before {
     opacity: 1;
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
     transition: none;
 }
 
 .icon:before,
 .large-icon:before {
+    -webkit-transition: .45s ease;
+    -o-transition: .45s ease;
+    -moz-transition: .45s ease;
     transition: .45s ease;
 }
 
@@ -224,11 +235,17 @@ footer {
     font-size: 11px;
     text-align: center;
     opacity: .33;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    -moz-transition: .5s ease;
     transition: .5s ease;
 }
 
 footer:hover {
     opacity: 1;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    -moz-transition: .2s ease;
     transition: .2s ease;
 }
 
@@ -450,6 +467,66 @@ footer:hover {
     }
 }
 
+@-webkit-keyframes footer-in {
+
+    0%,
+    50% {
+        opacity: 0;
+        -webkit-transform: scaleX(1.5) translateY(42px);
+        -moz-transform: scaleX(1.5) translateY(42px);
+        -o-transform: scaleX(1.5) translateY(42px);
+        transform: scaleX(1.5) translateY(42px);
+    }
+
+    100% {
+        opacity: .33;
+        -webkit-transform: scaleX(1) translateY(0);
+        -moz-transform: scaleX(1) translateY(0);
+        -o-transform: scaleX(1) translateY(0);
+        transform: scaleX(1) translateY(0);
+    }
+}
+
+@-moz-keyframes footer-in {
+
+    0%,
+    50% {
+        opacity: 0;
+        -webkit-transform: scaleX(1.5) translateY(42px);
+        -moz-transform: scaleX(1.5) translateY(42px);
+        -o-transform: scaleX(1.5) translateY(42px);
+        transform: scaleX(1.5) translateY(42px);
+    }
+
+    100% {
+        opacity: .33;
+        -webkit-transform: scaleX(1) translateY(0);
+        -moz-transform: scaleX(1) translateY(0);
+        -o-transform: scaleX(1) translateY(0);
+        transform: scaleX(1) translateY(0);
+    }
+}
+
+@-o-keyframes footer-in {
+
+    0%,
+    50% {
+        opacity: 0;
+        -webkit-transform: scaleX(1.5) translateY(42px);
+        -moz-transform: scaleX(1.5) translateY(42px);
+        -o-transform: scaleX(1.5) translateY(42px);
+        transform: scaleX(1.5) translateY(42px);
+    }
+
+    100% {
+        opacity: .33;
+        -webkit-transform: scaleX(1) translateY(0);
+        -moz-transform: scaleX(1) translateY(0);
+        -o-transform: scaleX(1) translateY(0);
+        transform: scaleX(1) translateY(0);
+    }
+}
+
 @keyframes footer-in {
 
     0%,
@@ -468,6 +545,21 @@ footer:hover {
         -o-transform: scaleX(1) translateY(0);
         transform: scaleX(1) translateY(0);
     }
+}
+
+@-webkit-keyframes theme-button-fade-in{
+    0%,65%{opacity:0}
+    100%{opacity:.5}
+}
+
+@-moz-keyframes theme-button-fade-in{
+    0%,65%{opacity:0}
+    100%{opacity:.5}
+}
+
+@-o-keyframes theme-button-fade-in{
+    0%,65%{opacity:0}
+    100%{opacity:.5}
 }
 
 @keyframes theme-button-fade-in{
@@ -497,7 +589,10 @@ footer {
 }
 
 .theme-switch{
-    animation: 1.2s theme-button-fade-in;
+    -webkit-animation: 1.2s theme-button-fade-in;
+       -moz-animation: 1.2s theme-button-fade-in;
+         -o-animation: 1.2s theme-button-fade-in;
+            animation: 1.2s theme-button-fade-in;
 }
 
 /* other */
@@ -530,10 +625,16 @@ footer {
 }
 
 .link {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    -moz-transition: .3s ease;
     transition: .3s ease;
 }
 
 .link:hover {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    -moz-transition: .3s ease;
     transition: .3s ease;
     text-decoration: underline;
 }
@@ -615,15 +716,24 @@ footer {
     cursor: pointer;
     padding: 4px;
     opacity: .65;
+    -webkit-transition: .45s ease;
+    -o-transition: .45s ease;
+    -moz-transition: .45s ease;
     transition: .45s ease;
 }
 
 .theme-switch:hover{
     text-shadow: var(--light-shadow);
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    -moz-transition: .2s ease;
     transition: .2s ease;
 }
 
 .theme-switch:active{
     opacity: 1;
+    -webkit-transition: none;
+    -o-transition: none;
+    -moz-transition: none;
     transition: none;
 }
